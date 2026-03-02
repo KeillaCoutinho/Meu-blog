@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fce7f3 0%, #e9d5ff 100%);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #d8b4fe 0%, #f472b6 100%);
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #ec4899;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #f3e8ff;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background: #ec4899;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(236, 72, 153, 0.3);
+}
+
+.btn:hover {
+    background: #be185d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(236, 72, 153, 0.4);
+}
+
+/* Main */
+.main {
+    padding: 60px 20px;
+}
+
+/* Projetos */
+.projetos {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #d8b4fe;
+}
+
+.projetos h2 {
+    color: #a855f7;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.projetos ul {
+    list-style: none;
+}
+
+.projetos li {
+    margin-bottom: 15px;
+}
+
+.projetos a {
+    display: block;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #f3e8ff 0%, #fce7f3 100%);
+    color: #7e22ce;
+    text-decoration: none;
+    border-radius: 8px;
+    border-left: 4px solid #d8b4fe;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.projetos a:hover {
+    background: linear-gradient(135deg, #e9d5ff 0%, #f472b6 100%);
+    color: #ec4899;
+    border-left-color: #ec4899;
+    transform: translateX(10px);
+}
+
+/* Seção Sobre Mim */
+.about-section {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #d8b4fe;
+}
+
+.about-section h2 {
+    color: #a855f7;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Seção Habilidades */
+.skills-section {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #f472b6;
+}
+
+.skills-section h2 {
+    color: #a855f7;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #f3e8ff 0%, #fce7f3 100%);
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #d8b4fe;
+    transition: all 0.3s ease;
+    color: #555;
+}
+
+.skills-list li:hover {
+    background: linear-gradient(135deg, #e9d5ff 0%, #f472b6 100%);
+    border-left-color: #ec4899;
+    transform: translateX(10px);
+}
+
+.skill-category {
+    font-weight: 600;
+    color: #a855f7;
+    margin-right: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header {
+        padding: 40px 15px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .projetos {
+        padding: 25px;
+    }
+
+    .projetos h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section,
+    .skills-section {
+        padding: 25px;
+    }
+
+    .about-section h2,
+    .skills-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
